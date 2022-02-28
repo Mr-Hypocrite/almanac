@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almanac</title>
+    <link rel="icon" href="../Images/Almanac.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../dist/output.css">
+</head>
+<body class='font-montserrat'>
+
+    <!-- NavBar Section -->
+    <section id='NavBar'>
+        <div class='flex flex-col w-full overflow-hidden'>
+            <!-- Hamburger -->
+            <div id='hamburger' class='flex flex-col items-center w-fit gap-1 m-2 ml-auto p-2 hover:bg-[#F3F1F5] sm:hidden'>
+                <div class='border-t-2 border-[#7F7C82] w-6'></div>
+                <div class='border-t-2 border-[#7F7C82] w-6'></div>
+                <div class='border-t-2 border-[#7F7C82] w-6'></div>
+            </div>
+    
+            <!-- NavBar Elements -->
+            <div id='ham-target' class='absolute sm:relative ml-auto right-0 top-10 sm:top-0 -translate-y-36 sm:-translate-y-0 transition-all ease-in-out duration-300'>
+                <div class='flex flex-col sm:flex-row text-right font-medium mx-2 md:mr-9 p-2 gap-2 sm:gap-9 sm:my-4'>
+                    
+                    <a href="">
+                        <h3>Work</h3>
+                    </a>
+                    
+                    <a href="">
+                        <h3>Blog</h3>
+                    </a>
+                    
+                    <a href="">
+                        <h3>Contact</h3>
+                    </a>
+    
+                </div>
+            </div>
+    
+        </div>
+    </section>
+
+    <!-- Body -->
+    <div id='body' class='transition-all ease-in-out duration-300'>
+
+        <!-- Introduction Section -->
+        <section id="introduction">
+            <div class='max-w-[85%] sm:max-w-[70%] xl:max-w-screen-lg flex flex-col sm:flex-row-reverse justify-center sm:justify-between items-center sm:gap-5 text-center mx-auto sm:my-10'>
+            
+                <div class='sm:w-[35%]'>
+                    <img class='w-24 h-24 sm:w-48 xl:w-64 sm sm:h-48 xl:h-64 object-cover rounded-full mb-5 sm:mb-0 justify-self-end' src="../Images/profile-pic.png" alt="">
+                </div>
+    
+                <!-- Content -->
+                <div class='sm:w-[75%]'>
+                    <h2 class='font-bold text-2xl'>Hi, I'm John, <br> Creative <br> Technologist</h2>
+    
+                    <br>
+    
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure unde exercitationem laudantium blanditiis veritatis, laboriosam fugit.
+                    </p>
+    
+                    <!-- Download Resume Button -->
+                    <div class='bg-[#FC4F4F] text-white w-fit px-5 py-2 mx-auto my-6 rounded-sm cursor-pointer opacity-90 hover:opacity-100 hover:scale-105 transition-all ease-in-out duration-300'>
+                        <h3>Download Resume</h3>
+                    </div>
+                </div>
+    
+            </div>
+        </section>
+
+        <!-- Recent Posts Section -->
+        <section id='rps'>
+            <div class='bg-[#CAF0F8] pb-10'>
+
+                <div class='max-w-[95%] sm:max-w-[70%] xl:max-w-screen-lg mx-auto'>
+
+                    <div class='flex justify-center items-center sm:justify-between py-4'>
+                        <h5 class='text-center text-md'>Recent Posts</h5>
+                        <a class='hidden sm:inline-block text-cyan-500 cursor-pointer text-xs' href='#rps'>View all</a>
+                    </div>
+    
+                    <div class='flex flex-col sm:flex-row gap-4 justify-between'>
+                        
+                        <div class='bg-white p-4 lg:p-8 rounded-sm'>
+                            <h2 class='font-bold text-lg'>
+                                Making a design system from scratch
+                            </h2>
+        
+                            <p class='font-medium text-xs mt-2 mb-3'>12 Feb 2020<span class='mx-4'>|</span>Design, Pattern</p>
+        
+                            <p class='font-medium text-xs'>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi porro amet officia quaerat reprehenderit placeat repellendus reiciendis sit minima itaque?
+                            </p>
+        
+                        </div>
+    
+                        <div class='bg-white p-4 lg:p-8 rounded-sm'>
+                            <h2 class='font-bold text-lg'>
+                                Creating pixel perfect icons in Figma
+                            </h2>
+        
+                            <p class='font-medium text-xs mt-2 mb-3'>12 Feb 2020<span class='mx-4'>|</span>Design, Pattern</p>
+        
+                            <p class='font-medium text-xs'>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi porro amet officia quaerat reprehenderit placeat repellendus reiciendis sit minima itaque?
+                            </p>
+        
+                        </div>
+    
+                    </div>
+
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- Featured Work Section -->
+        <section id="featured">
+            <div class="mb-10 max-w-[90%] sm:max-w-[70%] xl:max-w-screen-lg mx-auto overflow-hidden">
+
+                <h3 class='text-center sm:text-left text-md my-5 sm:my-8'>Featured Work</h3>
+    
+                <!-- Card -->
+                <div class='grid grid-cols-1 grid-rows-[fit-content(100%)_fit-content(100%)] sm:grid-cols-[35%_75%] sm:grid-rows-1 gap-8'>
+                    <!-- Image -->
+                    <div class='overflow-hidden'>
+                        <img class='w-full rounded-md object-cover object-center hover:scale-105 transition-all ease-in-out duration-500' src="../Images/Dashboard.png" alt="">
+                    </div>
+    
+                    <!-- Content -->
+                    <div class='flex flex-col md:gap-3'>
+                        <h2 class='text-xl font-bold mb-4'>Designing Dashboards</h2>
+    
+                        <div class='flex gap-6'>
+                            <h3 class='bg-[#21325E] text-white font-bold text-sm w-fit px-2 rounded-full'>2020</h3>
+                            <h3 class='opacity-40 font-bold text-sm w-fit'>Dashboard</h3>
+                        </div>
+    
+                        <p class='font-medium text-sm py-2'>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima impedit asperiores et. Recusandae ex animi cumque. Voluptas in perferendis recusandae.
+                        </p>
+                    </div>
+    
+                </div>
+    
+                <hr class='hidden sm:inline-block my-4'>
+    
+                <!-- Card -->
+                <div class='hidden sm:grid grid-cols-1 grid-rows-2 sm:grid-cols-[35%_75%] sm:grid-rows-1 gap-8'>
+                    <!-- Image -->
+                    <div class='overflow-hidden'>
+                        <img class='w-full rounded-md object-cover object-center hover:scale-105 transition-all ease-in-out duration-500' src="../Images/Illustration.jpg" alt="">
+                    </div>
+    
+                    <!-- Content -->
+                    <div class='flex flex-col md:gap-3'>
+                        <h2 class='text-xl font-bold mb-4'>Vibrant Portraits of 2020</h2>
+    
+                        <div class='flex gap-6'>
+                            <h3 class='bg-[#21325E] text-white font-bold text-sm w-fit px-2 rounded-full'>2018</h3>
+                            <h3 class='opacity-40 font-bold text-sm w-fit'>Illustration</h3>
+                        </div>
+    
+                        <p class='font-medium text-sm py-2'>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima impedit asperiores et. Recusandae ex animi cumque. Voluptas in perferendis recusandae.
+                        </p>
+                    </div>
+    
+                </div>
+    
+                <hr class='my-4'>
+    
+                <!-- Card -->
+                <div class='hidden sm:grid grid-cols-1 grid-rows-2 sm:grid-cols-[35%_75%] sm:grid-rows-1 gap-8'>
+                    <!-- Image -->
+                    <div class='overflow-hidden'>
+                        <img class='w-full rounded-md object-cover object-center hover:scale-105 transition-all ease-in-out duration-500' src="../Images/typography.jpg" alt="">
+                    </div>
+    
+                    <!-- Content -->
+                    <div class='flex flex-col md:gap-3'>
+                        <h2 class='text-xl font-bold mb-4'>36 Days of Malayalam</h2>
+    
+                        <div class='flex gap-6'>
+                            <h3 class='bg-[#21325E] text-white font-bold text-sm w-fit px-2 rounded-full'>2018</h3>
+                            <h3 class='opacity-40 font-bold text-sm w-fit'>Typography</h3>
+                        </div>
+    
+                        <p class='font-medium text-sm py-2'>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima impedit asperiores et. Recusandae ex animi cumque. Voluptas in perferendis recusandae.
+                        </p>
+                    </div>
+    
+                </div>
+    
+                <hr class='hidden sm:inline-block my-4'>
+    
+            </div>
+        </section>
+
+        <!-- Footer/Social Links -->
+        <section id='social-links' class='mb-10 '>
+
+            <div class='flex justify-center gap-10 w-fit mx-auto mb-4'>
+
+                <a class='text-[#151D3B]' href="https://www.facebook.com/">
+                    <i class="fa-brands fa-facebook-square fa-2x"></i>
+                </a>
+                
+                <a class='text-[#151D3B]' href="https://www.instagram.com/">
+                    <i class="fa-brands fa-instagram fa-2x"></i>
+                </a>
+
+                <a class='text-[#151D3B]' href="https://twitter.com/">
+                    <i class="fa-brands fa-twitter fa-2x"></i>
+                </a>
+
+                <a class='text-[#151D3B]' href="https://www.linkedin.com/">
+                    <i class="fa-brands fa-linkedin fa-2x"></i>
+                </a>
+
+            </div>
+
+            <h3 class='text-center text-xs text-[#151D3B]'>Copyright &copy;2020 All rights reserved</h3>
+
+        </section>
+
+    </div>
+    
+    <script src="./index.js"></script>
+</body>
+</html>
